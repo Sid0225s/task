@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.main {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+}
+.circle {
+  padding: 2rem;
+  width: 3.5rem;
+  font-weight: 900;
+  text-align: center;
+  color: rgb(128, 127, 127);
+  font-size: 3rem;
+  border-radius: 50%;
+  background-color: rgba(146, 146, 113, 0.549);
+}
+.top {
+  background-color: rgb(230, 230, 54);
+}
+
+.down {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.down div {
+  background-color: rgb(211, 59, 97);
+}
+.left {
+  background: rgb(211, 59, 97);
+  position: relative;
+}
+.left:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 70px solid rgb(230, 230, 54);
+  border-left: 100px solid rgb(211, 59, 97);
+  width: 0;
+}
+.right {
+  background: rgb(211, 59, 97);
+  position: relative;
+}
+.right:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 70px solid rgb(230, 230, 54);
+  border-right: 100px solid rgb(211, 59, 97);
+  width: 0;
+}
